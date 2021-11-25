@@ -1,0 +1,54 @@
+@keyframes scroll {
+    100%{
+        background-position:0px -3000px;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .wrapper {
+        animation: scroll 200s linear infinite;
+    }
+}
+
+@media (min-width: 670px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
+body, a {
+    color: #03A062;
+    animation: scroll 70s linear infinite;
+    background: url("../images/background.jpg"), #111111;
+}
+
+.wrapper {
+    background: rgba(0, 0, 0, 0.75);
+    border-color: #FFF;
+    border-style: none solid;
+    border-width: 0.5px;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 1% auto;
+    max-width: 80%;
+}
+
+p {
+    text-align: left;
+    font-size: x-large;
+    font-family: initial;
+}
+
+h1 {
+    margin: 0;
+    font-size: xxx-large;
+    text-align: center;
+    font-family: matrix;
+}
+
+h1 > span {
+    border-bottom: 1px solid #03A062;
+    margin: 2px;
+}
+
+
