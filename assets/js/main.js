@@ -10,6 +10,7 @@ function writeAndAnswer(value, element, i, callback) {
         element.nextElementSibling.style.display = 'initial';
         
         if(element.nextElementSibling.nextElementSibling.nextElementSibling == null) {
+            document.getElementById('lastrow').style.display = '';
             blink(document.getElementById('current-cursor'));
         }
     }
@@ -38,9 +39,9 @@ function blink(cursorElement) {
 
 window.onload = function () {
     let typeToElementsId = {
-        'whoami': 'whoami',
-        'resume': 'show resume',
-        'contact': 'show contact',
+        'whoami': '$ whoami',
+        'resume': '$ show resume',
+        'contact': '$ show contact',
     };
 
     writeAllElements(typeToElementsId, 0);
